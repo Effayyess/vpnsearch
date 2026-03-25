@@ -93,12 +93,8 @@ export default function VpnReview() {
           </Link>
 
           <div className="flex items-start gap-5 flex-wrap">
-            <div className="w-24 h-16 rounded-xl overflow-hidden shrink-0 shadow-lg border border-zinc-700 bg-zinc-900 flex items-center justify-center">
-              <img
-                src={vpn.logoUrl}
-                alt={`${vpn.name} logo`}
-                className="w-full h-full object-contain p-1"
-              />
+            <div className="w-24 h-24 rounded-xl overflow-hidden shrink-0 shadow-lg border border-zinc-700 bg-white flex items-center justify-center p-2">
+              <VpnLogo slug={vpn.slug} name={vpn.name} className="w-full h-full object-contain" />
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-3 flex-wrap mb-2">

@@ -1,6 +1,8 @@
 // VPN Vault UK — VpnLogo component
-// Renders inline SVG logos for all 15 VPN providers.
-// Inline SVG bypasses CDN content-type issues and always renders correctly.
+// Uses real VPN brand icons (apple-touch-icon quality) from CDN.
+// Falls back to a branded colour badge if the image fails to load.
+
+import { useState } from "react";
 
 interface VpnLogoProps {
   slug: string;
@@ -8,87 +10,71 @@ interface VpnLogoProps {
   className?: string;
 }
 
-// Logo definitions: each returns an inline SVG string
-const LOGOS: Record<string, { bg: string; fg: string; accent: string; abbr?: string }> = {
-  nordvpn:       { bg: "#4687FF", fg: "#FFFFFF", accent: "#FFFFFF" },
-  expressvpn:    { bg: "#DA3940", fg: "#FFFFFF", accent: "#FFFFFF" },
-  surfshark:     { bg: "#1DBFBF", fg: "#FFFFFF", accent: "#FFFFFF" },
-  cyberghost:    { bg: "#FFCC00", fg: "#1A1A2E", accent: "#1A1A2E" },
-  protonvpn:     { bg: "#6D4AFF", fg: "#FFFFFF", accent: "#FFFFFF" },
-  ipvanish:      { bg: "#70B244", fg: "#FFFFFF", accent: "#FFFFFF" },
-  pia:           { bg: "#1C1C1C", fg: "#FFFFFF", accent: "#6DB33F", abbr: "PIA" },
-  mullvad:       { bg: "#FFCC44", fg: "#2B2B2B", accent: "#2B2B2B" },
-  hotspotshield: { bg: "#0066CC", fg: "#FFFFFF", accent: "#FFFFFF" },
-  atlasvpn:      { bg: "#0D1B4B", fg: "#FFFFFF", accent: "#4FC3F7" },
-  hidemevpn:     { bg: "#00A651", fg: "#FFFFFF", accent: "#FFFFFF" },
-  tunnelbear:    { bg: "#F5A623", fg: "#FFFFFF", accent: "#FFFFFF" },
-  windscribe:    { bg: "#1A3A5C", fg: "#FFFFFF", accent: "#4FC3F7" },
-  vyprvpn:       { bg: "#C0392B", fg: "#FFFFFF", accent: "#FFFFFF" },
-  strongvpn:     { bg: "#0A2240", fg: "#FFFFFF", accent: "#E8A020" },
+const BASE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/";
+
+// Real icon URLs sourced from each VPN provider's website (apple-touch-icon / Google favicon)
+const LOGO_URLS: Record<string, string> = {
+  nordvpn:       BASE + "nordvpn_22ff2754.png",
+  expressvpn:    BASE + "expressvpn_428ea4ec.png",
+  surfshark:     BASE + "surfshark_54cae1c3.png",
+  cyberghost:    BASE + "cyberghost_5241e8d3.png",
+  protonvpn:     BASE + "protonvpn_2654120c.png",
+  ipvanish:      BASE + "ipvanish_432c5f13.png",
+  pia:           BASE + "pia_45f458a3.png",
+  mullvad:       BASE + "mullvad_bede291e.png",
+  windscribe:    BASE + "windscribe_9f71d4b8.png",
+  hidemevpn:     BASE + "hidemevpn_c167ffd7.png",
+  tunnelbear:    BASE + "tunnelbear_78d23ff6.png",
+  hotspotshield: BASE + "hotspotshield_1a1a25d7.png",
+  atlasvpn:      BASE + "atlasvpn_24eeab76.png",
+  vyprvpn:       BASE + "vyprvpn_57b95442.png",
+  strongvpn:     BASE + "strongvpn_407c8728.png",
+};
+
+// Brand colours for the fallback badge
+const BRAND_COLORS: Record<string, { bg: string; fg: string }> = {
+  nordvpn:       { bg: "#4687FF", fg: "#fff" },
+  expressvpn:    { bg: "#DA3940", fg: "#fff" },
+  surfshark:     { bg: "#1DBFBF", fg: "#fff" },
+  cyberghost:    { bg: "#FFCC00", fg: "#1a1a2e" },
+  protonvpn:     { bg: "#6D4AFF", fg: "#fff" },
+  ipvanish:      { bg: "#FF6B35", fg: "#fff" },
+  pia:           { bg: "#4CAF50", fg: "#fff" },
+  mullvad:       { bg: "#FFCC44", fg: "#2b2b2b" },
+  windscribe:    { bg: "#1A3A5C", fg: "#fff" },
+  hidemevpn:     { bg: "#00A651", fg: "#fff" },
+  tunnelbear:    { bg: "#F5A623", fg: "#fff" },
+  hotspotshield: { bg: "#0066CC", fg: "#fff" },
+  atlasvpn:      { bg: "#0D1B4B", fg: "#fff" },
+  vyprvpn:       { bg: "#C0392B", fg: "#fff" },
+  strongvpn:     { bg: "#0A2240", fg: "#fff" },
 };
 
 export default function VpnLogo({ slug, name, className = "" }: VpnLogoProps) {
-  const config = LOGOS[slug];
+  const [imgError, setImgError] = useState(false);
+  const logoUrl = LOGO_URLS[slug];
+  const brand = BRAND_COLORS[slug] ?? { bg: "#334155", fg: "#fff" };
 
-  if (!config) {
-    // Fallback for unknown slugs
+  if (!logoUrl || imgError) {
+    // Branded colour fallback — shows first letter in brand colour
     return (
       <div
-        className={`flex items-center justify-center rounded-lg font-bold text-sm ${className}`}
-        style={{ background: "#334155", color: "#fff" }}
+        className={`flex items-center justify-center rounded-lg font-black text-sm select-none ${className}`}
+        style={{ background: brand.bg, color: brand.fg }}
+        aria-label={`${name} logo`}
       >
-        {name.slice(0, 3).toUpperCase()}
+        {name[0].toUpperCase()}
       </div>
     );
   }
 
-  const { bg, fg, accent, abbr } = config;
-  const displayName = abbr || name.toUpperCase();
-  const letter = name[0].toUpperCase();
-
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 200 60"
-      className={className}
-      role="img"
-      aria-label={`${name} logo`}
-    >
-      {/* Background */}
-      <rect width="200" height="60" rx="8" fill={bg} />
-
-      {/* Icon circle */}
-      <circle cx="34" cy="30" r="16" fill="rgba(255,255,255,0.18)" />
-      <text
-        x="34"
-        y="30"
-        fontFamily="Arial Black, Arial, sans-serif"
-        fontSize="15"
-        fontWeight="900"
-        fill={fg}
-        textAnchor="middle"
-        dominantBaseline="central"
-      >
-        {letter}
-      </text>
-
-      {/* Wordmark */}
-      <text
-        x="110"
-        y="30"
-        fontFamily="Arial Black, Arial, sans-serif"
-        fontSize="14"
-        fontWeight="900"
-        fill={fg}
-        textAnchor="middle"
-        dominantBaseline="central"
-        letterSpacing="1"
-      >
-        {displayName}
-      </text>
-
-      {/* Accent underline */}
-      <rect x="60" y="50" width="130" height="3" rx="1.5" fill={accent} opacity="0.4" />
-    </svg>
+    <img
+      src={logoUrl}
+      alt={`${name} logo`}
+      className={`object-contain ${className}`}
+      loading="lazy"
+      onError={() => setImgError(true)}
+    />
   );
 }
