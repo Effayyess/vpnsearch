@@ -1,4 +1,4 @@
-// VPN Vault UK — Best VPN for Privacy UK
+// VPN Search — Best VPN for Privacy UK
 import { Link } from "wouter";
 import { Shield, Check, ExternalLink, ChevronRight, Eye, Lock } from "lucide-react";
 import SEOHead from "@/components/SEOHead";

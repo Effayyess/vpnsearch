@@ -1,4 +1,4 @@
-// VPN Vault UK — VpnLogo component
+// VPN Search — VpnLogo component
 // Uses real VPN brand icons (apple-touch-icon quality) from CDN.
 // Falls back to a branded colour badge if the image fails to load.
 

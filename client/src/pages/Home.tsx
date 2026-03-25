@@ -1,4 +1,4 @@
-// VPN Vault UK — Homepage
+// VPN Search — Homepage
 // Design: "Digital Cartography" — off-white, slate text, amber accent
 // Layout: Asymmetric hero, horizontal score cards, editorial sections
 // COMPLETELY DIFFERENT from vpncompareuk.co.uk
@@ -33,12 +33,12 @@ export default function Home() {
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "VPN Vault UK",
-          url: "https://www.vpnvaultuk.co.uk",
+          name: "VPN Search",
+          url: "https://www.vpnsearch.co.uk",
           description: "Independent VPN reviews and rankings for UK users",
           potentialAction: {
             "@type": "SearchAction",
-            target: "https://www.vpnvaultuk.co.uk/best-vpns-uk",
+            target: "https://www.vpnsearch.co.uk/best-vpns-uk",
           },
         }}
       />

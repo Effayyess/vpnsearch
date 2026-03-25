@@ -1,4 +1,4 @@
-// VPN Vault UK — GDPR/PECR Cookie Consent Banner
+// VPN Search — GDPR/PECR Cookie Consent Banner
 
 import { useState, useEffect } from "react";
 import { Cookie } from "lucide-react";
@@ -19,7 +19,7 @@ export default function CookieBanner() {
   });
 
   useEffect(() => {
-    const consent = localStorage.getItem("vpnvault_cookie_consent");
+    const consent = localStorage.getItem("vpnsearch_cookie_consent");
     if (!consent) {
       setTimeout(() => setVisible(true), 1500);
     }
@@ -27,18 +27,18 @@ export default function CookieBanner() {
 
   function acceptAll() {
     const all = { necessary: true, analytics: true, marketing: true };
-    localStorage.setItem("vpnvault_cookie_consent", JSON.stringify(all));
+    localStorage.setItem("vpnsearch_cookie_consent", JSON.stringify(all));
     setVisible(false);
   }
 
   function rejectAll() {
     const minimal = { necessary: true, analytics: false, marketing: false };
-    localStorage.setItem("vpnvault_cookie_consent", JSON.stringify(minimal));
+    localStorage.setItem("vpnsearch_cookie_consent", JSON.stringify(minimal));
     setVisible(false);
   }
 
   function savePreferences() {
-    localStorage.setItem("vpnvault_cookie_consent", JSON.stringify(prefs));
+    localStorage.setItem("vpnsearch_cookie_consent", JSON.stringify(prefs));
     setVisible(false);
   }
 

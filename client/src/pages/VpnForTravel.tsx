@@ -1,4 +1,4 @@
-// VPN Vault UK — VPN for Travel
+// VPN Search — VPN for Travel
 import { Link } from "wouter";
 import { Globe, ExternalLink, ChevronRight } from "lucide-react";
 import SEOHead from "@/components/SEOHead";

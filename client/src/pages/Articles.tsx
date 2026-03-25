@@ -1,4 +1,4 @@
-// VPN Vault UK — Articles / Blog Index
+// VPN Search — Articles / Blog Index
 // Design: Digital Cartography — off-white/slate, amber accent, Space Grotesk headings
 // Shows all 24 blog posts with live category filtering
 
@@ -24,7 +24,7 @@ export default function Articles() {
   return (
     <>
       <SEOHead
-        title="VPN Articles & Guides 2026 — VPN Vault UK"
+        title="VPN Articles & Guides 2026 — VPN Search"
         description={`${blogPosts.length} in-depth VPN guides, privacy articles, and streaming tips for UK users. Written by our independent testing team.`}
         canonical="/articles"
       />

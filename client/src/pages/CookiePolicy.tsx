@@ -1,10 +1,10 @@
-// VPN Vault UK — Cookie Policy
+// VPN Search — Cookie Policy
 import SEOHead from "@/components/SEOHead";
 
 export default function CookiePolicy() {
   return (
     <>
-      <SEOHead title="Cookie Policy — VPN Vault UK" description="VPN Vault UK cookie policy." canonical="/cookie-policy" />
+      <SEOHead title="Cookie Policy — VPN Search" description="VPN Search cookie policy." canonical="/cookie-policy" />
       <div className="bg-zinc-950 py-14">
         <div className="container">
           <h1 className="text-3xl font-bold text-white" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Cookie Policy</h1>

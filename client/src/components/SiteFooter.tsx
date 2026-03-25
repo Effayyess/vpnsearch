@@ -1,4 +1,4 @@
-// VPN Vault UK — Site Footer
+// VPN Search — Site Footer
 // Design: Dark slate-900 background, amber accents, editorial layout
 
 import { Link } from "wouter";
@@ -18,7 +18,7 @@ export default function SiteFooter() {
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-white font-bold text-base tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-                  VPN Vault UK
+                  VPN Search
                 </span>
               </div>
             </Link>
@@ -26,7 +26,7 @@ export default function SiteFooter() {
               Independent VPN reviews and rankings for UK users. We purchase and test every VPN ourselves — our rankings are never influenced by affiliate commissions.
             </p>
             <p className="text-xs text-slate-500 leading-relaxed max-w-xs">
-              <strong className="text-slate-400">Affiliate Disclosure:</strong> VPN Vault UK earns commission when you purchase a VPN through our links. This does not affect our rankings or reviews. We only recommend VPNs we have independently tested.
+              <strong className="text-slate-400">Affiliate Disclosure:</strong> VPN Search earns commission when you purchase a VPN through our links. This does not affect our rankings or reviews. We only recommend VPNs we have independently tested.
             </p>
           </div>
 
@@ -103,7 +103,7 @@ export default function SiteFooter() {
       <div className="border-t border-slate-800">
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} VPN Vault UK. All rights reserved. VPN Vault UK is an independent review site.
+            © {new Date().getFullYear()} VPN Search. All rights reserved. VPN Search is an independent review site.
           </p>
           <div className="flex items-center gap-6">
             {[

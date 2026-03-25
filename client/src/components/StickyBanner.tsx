@@ -1,4 +1,4 @@
-// VPN Vault UK — Sticky Promotional Banner
+// VPN Search — Sticky Promotional Banner
 // Design: Slate-900 background, amber CTA, countdown timer
 
 import { useState, useEffect } from "react";
@@ -6,10 +6,10 @@ import { X, Clock } from "lucide-react";
 
 function useCountdown(targetHours: number = 48) {
   const [timeLeft, setTimeLeft] = useState(() => {
-    const stored = sessionStorage.getItem("vpnvault_banner_end");
+    const stored = sessionStorage.getItem("vpnsearch_banner_end");
     if (stored) return Math.max(0, parseInt(stored) - Date.now());
     const end = Date.now() + targetHours * 60 * 60 * 1000;
-    sessionStorage.setItem("vpnvault_banner_end", String(end));
+    sessionStorage.setItem("vpnsearch_banner_end", String(end));
     return targetHours * 60 * 60 * 1000;
   });
 
@@ -33,7 +33,7 @@ function useCountdown(targetHours: number = 48) {
 
 export default function StickyBanner() {
   const [dismissed, setDismissed] = useState(() => {
-    return sessionStorage.getItem("vpnvault_banner_dismissed") === "true";
+    return sessionStorage.getItem("vpnsearch_banner_dismissed") === "true";
   });
   const { hours, minutes, seconds } = useCountdown(48);
 
@@ -100,7 +100,7 @@ export default function StickyBanner() {
             <button
               onClick={() => {
                 setDismissed(true);
-                sessionStorage.setItem("vpnvault_banner_dismissed", "true");
+                sessionStorage.setItem("vpnsearch_banner_dismissed", "true");
               }}
               className="text-slate-500 hover:text-slate-300 transition-colors p-1"
               aria-label="Dismiss banner"

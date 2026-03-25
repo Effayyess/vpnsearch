@@ -1,4 +1,4 @@
-// VPN Vault UK — Site Navigation
+// VPN Search — Site Navigation
 // Design: "Digital Cartography" — clean white nav, amber CTA pill
 // Structure: Rankings | By Need | Reviews | Learn | Deals | Articles
 // COMPLETELY DIFFERENT from vpncompareuk.co.uk navigation
@@ -100,7 +100,7 @@ export default function SiteNav() {
             </div>
             <div className="flex flex-col leading-none">
               <span className="font-display text-base font-800 text-slate-900 tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 800 }}>
-                VPN Vault
+                VPN Search
               </span>
               <span className="text-[10px] font-medium text-slate-500 tracking-widest uppercase">UK</span>
             </div>

@@ -1,4 +1,4 @@
-// VPN Vault UK — Individual VPN Review Page
+// VPN Search — Individual VPN Review Page
 // Content-heavy, data-rich, completely original
 
 import { useParams, Link } from "wouter";
@@ -66,7 +66,7 @@ export default function VpnReview() {
             ratingValue: vpn.score,
             bestRating: 10,
           },
-          author: { "@type": "Organization", name: "VPN Vault UK" },
+          author: { "@type": "Organization", name: "VPN Search" },
           itemReviewed: { "@type": "SoftwareApplication", name: vpn.name },
         }}
       />
@@ -171,7 +171,7 @@ export default function VpnReview() {
               {/* Intro */}
               <section className="bg-white rounded-xl border border-zinc-200 p-6">
                 <h2 className="text-xl font-bold text-slate-900 mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-                  VPN Vault UK Verdict
+                  VPN Search Verdict
                 </h2>
                 <p className="text-slate-600 leading-relaxed mb-4">{vpn.fullReviewIntro}</p>
                 <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">

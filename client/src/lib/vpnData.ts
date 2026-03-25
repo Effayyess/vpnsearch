@@ -1,9 +1,9 @@
-// VPN Vault UK — VPN Data Layer
+// VPN Search — VPN Data Layer
 // Enriched with competitor research from top10vpn.com, techradar.com
-// All scores, stats and content are independently rewritten for VPN Vault UK
+// All scores, stats and content are independently rewritten for VPN Search
 
-export const SITE_NAME = "VPN Vault UK";
-export const SITE_URL = "https://www.vpnvaultuk.co.uk";
+export const SITE_NAME = "VPN Search";
+export const SITE_URL = "https://www.vpnsearch.co.uk";
 
 export interface StreamingService {
   name: string;

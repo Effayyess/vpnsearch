@@ -1,4 +1,4 @@
-// VPN Vault UK — VPN Setup Guide
+// VPN Search — VPN Setup Guide
 import { Link } from "wouter";
 import { ChevronRight } from "lucide-react";
 import SEOHead from "@/components/SEOHead";

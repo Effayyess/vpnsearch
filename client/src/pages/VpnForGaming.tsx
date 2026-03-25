@@ -1,4 +1,4 @@
-// VPN Vault UK — VPN for Gaming
+// VPN Search — VPN for Gaming
 import { Link } from "wouter";
 import { Zap, ExternalLink, ChevronRight } from "lucide-react";
 import SEOHead from "@/components/SEOHead";

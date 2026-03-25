@@ -1,4 +1,4 @@
-// VPN Vault UK — VPN Deals Page
+// VPN Search — VPN Deals Page
 import { Link } from "wouter";
 import { ExternalLink, Tag, Clock } from "lucide-react";
 import SEOHead from "@/components/SEOHead";

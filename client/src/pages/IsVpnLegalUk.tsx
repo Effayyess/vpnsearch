@@ -1,4 +1,4 @@
-// VPN Vault UK — Is VPN Legal in UK?
+// VPN Search — Is VPN Legal in UK?
 import { Link } from "wouter";
 import { Shield, ChevronRight } from "lucide-react";
 import SEOHead from "@/components/SEOHead";

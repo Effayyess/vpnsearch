@@ -1,4 +1,4 @@
-// VPN Vault UK — About Page
+// VPN Search — About Page
 import { Link } from "wouter";
 import { Shield, CheckCircle, ChevronRight } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
@@ -7,13 +7,13 @@ export default function About() {
   return (
     <>
       <SEOHead
-        title="About VPN Vault UK — Independent VPN Testing"
-        description="VPN Vault UK is an independent VPN review site. We purchase every VPN ourselves and test it on a dedicated 1 Gbps UK connection. No sponsored rankings."
+        title="About VPN Search — Independent VPN Testing"
+        description="VPN Search is an independent VPN review site. We purchase every VPN ourselves and test it on a dedicated 1 Gbps UK connection. No sponsored rankings."
         canonical="/about"
       />
       <div className="bg-zinc-950 py-14">
         <div className="container">
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>About VPN Vault UK</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>About VPN Search</h1>
           <p className="text-zinc-400 max-w-2xl leading-relaxed">Independent VPN testing and reviews for UK users. We buy every VPN ourselves. No sponsored rankings.</p>
         </div>
       </div>
@@ -22,7 +22,7 @@ export default function About() {
           <div className="space-y-6">
             <div className="bg-white rounded-xl border border-zinc-200 p-6">
               <h2 className="text-xl font-bold text-slate-900 mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Who We Are</h2>
-              <p className="text-slate-600 leading-relaxed mb-4">VPN Vault UK is an independent review site focused exclusively on VPNs for UK users. We were founded because we were frustrated with VPN review sites that ranked VPNs based on affiliate commission rates rather than actual performance. Every VPN in our rankings has been purchased with our own money and tested on our own hardware.</p>
+              <p className="text-slate-600 leading-relaxed mb-4">VPN Search is an independent review site focused exclusively on VPNs for UK users. We were founded because we were frustrated with VPN review sites that ranked VPNs based on affiliate commission rates rather than actual performance. Every VPN in our rankings has been purchased with our own money and tested on our own hardware.</p>
               <p className="text-slate-600 leading-relaxed">Our testing team has been evaluating VPNs for over three years. We run a dedicated 1 Gbps fibre connection specifically for VPN testing, conduct weekly streaming tests, and read every privacy policy in full.</p>
             </div>
             <div className="bg-white rounded-xl border border-zinc-200 p-6">
@@ -47,7 +47,7 @@ export default function About() {
             </div>
             <div className="bg-white rounded-xl border border-zinc-200 p-6">
               <h2 className="text-xl font-bold text-slate-900 mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Affiliate Disclosure</h2>
-              <p className="text-slate-600 leading-relaxed mb-3">VPN Vault UK earns commission when you purchase a VPN through our links. This is how we fund our testing operation. However, our methodology is designed to be immune to financial incentives — we score each VPN on objective, measurable criteria, and our rankings reflect our honest assessment of each product.</p>
+              <p className="text-slate-600 leading-relaxed mb-3">VPN Search earns commission when you purchase a VPN through our links. This is how we fund our testing operation. However, our methodology is designed to be immune to financial incentives — we score each VPN on objective, measurable criteria, and our rankings reflect our honest assessment of each product.</p>
               <p className="text-slate-600 leading-relaxed">We have turned down sponsored placement requests from VPN providers. Our rankings are not for sale.</p>
             </div>
             <div className="text-center">

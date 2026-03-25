@@ -1,4 +1,4 @@
-// VPN Vault UK — Free VPN UK
+// VPN Search — Free VPN UK
 import { Link } from "wouter";
 import { AlertTriangle, Check, X, ExternalLink } from "lucide-react";
 import SEOHead from "@/components/SEOHead";

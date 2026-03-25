@@ -1,4 +1,4 @@
-// VPN Vault UK — SEO Head Component
+// VPN Search — SEO Head Component
 // Injects dynamic meta tags, Open Graph, Twitter Cards, and JSON-LD structured data
 
 import { useEffect } from "react";

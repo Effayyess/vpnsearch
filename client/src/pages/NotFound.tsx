@@ -1,4 +1,4 @@
-// VPN Vault UK — 404 Not Found
+// VPN Search — 404 Not Found
 import { Link } from "wouter";
 import { Shield, ChevronRight } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <>
       <SEOHead
-        title="Page Not Found — VPN Vault UK"
+        title="Page Not Found — VPN Search"
         description="The page you're looking for doesn't exist. Head back to our VPN rankings."
         canonical="/404"
       />

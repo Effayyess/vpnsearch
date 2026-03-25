@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.vpnvaultuk.co.uk/sitemap.xml
+Sitemap: https://www.vpnsearch.co.uk/sitemap.xml

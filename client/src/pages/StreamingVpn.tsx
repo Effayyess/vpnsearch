@@ -1,4 +1,4 @@
-// VPN Vault UK — Best VPN for Streaming UK page
+// VPN Search — Best VPN for Streaming UK page
 import { Link } from "wouter";
 import { Check, X, ExternalLink, Tv, ChevronRight } from "lucide-react";
 import SEOHead from "@/components/SEOHead";

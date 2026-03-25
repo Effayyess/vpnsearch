@@ -1,4 +1,4 @@
-// VPN Vault UK — Do I Need a VPN?
+// VPN Search — Do I Need a VPN?
 import { Link } from "wouter";
 import { Check, X, ChevronRight } from "lucide-react";
 import SEOHead from "@/components/SEOHead";

@@ -1,4 +1,4 @@
-// VPN Vault UK — VPN Comparison Table
+// VPN Search — VPN Comparison Table
 import { useState } from "react";
 import { Check, X } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
@@ -19,7 +19,7 @@ export default function VpnComparison() {
   return (
     <>
       <SEOHead
-        title="Compare VPNs Side by Side — VPN Vault UK"
+        title="Compare VPNs Side by Side — VPN Search"
         description="Compare the best VPNs for UK users side by side. Speed, streaming, privacy, price, and features — all in one table."
         canonical="/vpn-comparison"
       />

@@ -1,4 +1,4 @@
-// VPN Vault UK — VPN Ranking Card Component
+// VPN Search — VPN Ranking Card Component
 // Design: White card, amber left-border, DM Mono for scores, expandable details
 
 import { useState } from "react";

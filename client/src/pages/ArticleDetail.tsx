@@ -1,4 +1,4 @@
-// VPN Vault UK — Article Detail Page
+// VPN Search — Article Detail Page
 // Design: Digital Cartography — off-white/slate, amber accent, Space Grotesk headings
 // Full Markdown rendering with H2/H3, tables, bold, lists, code blocks
 
@@ -178,7 +178,7 @@ export default function ArticleDetail() {
   return (
     <>
       <SEOHead
-        title={`${post.title} | VPN Vault UK`}
+        title={`${post.title} | VPN Search`}
         description={metaDesc}
         canonical={`/articles/${post.slug}`}
         type="article"
@@ -257,7 +257,7 @@ export default function ArticleDetail() {
                   <span className="text-amber-700 font-bold text-lg" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>VV</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-slate-900 text-sm" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>VPN Vault UK Team</div>
+                  <div className="font-semibold text-slate-900 text-sm" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>VPN Search Team</div>
                   <p className="text-xs text-slate-500 mt-1 leading-relaxed">
                     Our team tests VPNs daily on dedicated UK connections. Every recommendation is based on real-world testing, not sponsored placements.
                   </p>

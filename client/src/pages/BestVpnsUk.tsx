@@ -1,4 +1,4 @@
-// VPN Vault UK — Best VPNs UK Rankings Page
+// VPN Search — Best VPNs UK Rankings Page
 
 import { useState } from "react";
 import { Filter } from "lucide-react";
