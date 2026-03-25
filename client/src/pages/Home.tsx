@@ -135,11 +135,8 @@ export default function Home() {
                 </div>
 
                 {/* Logo */}
-                <div
-                  className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-sm shrink-0"
-                  style={{ backgroundColor: vpn.color, fontFamily: "'Space Grotesk', sans-serif" }}
-                >
-                  {vpn.name.charAt(0)}
+                <div className="w-16 h-10 rounded-lg overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center">
+                  <img src={vpn.logoUrl} alt={`${vpn.name} logo`} className="w-full h-full object-contain" loading="lazy" />
                 </div>
 
                 {/* Info */}
@@ -240,11 +237,8 @@ export default function Home() {
                     <span className="text-sm font-bold text-zinc-300 w-5" style={{ fontFamily: "'DM Mono', monospace" }}>
                       {i + 1}
                     </span>
-                    <div
-                      className="w-7 h-7 rounded-md flex items-center justify-center text-white text-xs font-bold shrink-0"
-                      style={{ backgroundColor: vpn.color }}
-                    >
-                      {vpn.name.charAt(0)}
+                    <div className="w-12 h-7 rounded-md overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center">
+                      <img src={vpn.logoUrl} alt={vpn.name} className="w-full h-full object-contain" loading="lazy" />
                     </div>
                     <div className="flex-1">
                       <span className="text-sm font-semibold text-slate-800">{vpn.name}</span>
@@ -280,11 +274,8 @@ export default function Home() {
                     <span className="text-sm font-bold text-zinc-300 w-5" style={{ fontFamily: "'DM Mono', monospace" }}>
                       {i + 1}
                     </span>
-                    <div
-                      className="w-7 h-7 rounded-md flex items-center justify-center text-white text-xs font-bold shrink-0"
-                      style={{ backgroundColor: vpn.color }}
-                    >
-                      {vpn.name.charAt(0)}
+                    <div className="w-12 h-7 rounded-md overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center">
+                      <img src={vpn.logoUrl} alt={vpn.name} className="w-full h-full object-contain" loading="lazy" />
                     </div>
                     <div className="flex-1">
                       <span className="text-sm font-semibold text-slate-800">{vpn.name}</span>
@@ -411,8 +402,8 @@ export default function Home() {
             {/* Main card */}
             <div className="lg:col-span-2 bg-slate-800/50 border border-slate-700 rounded-xl p-6">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-                  N
+                <div className="w-20 h-12 rounded-xl overflow-hidden border border-slate-600 bg-slate-900 flex items-center justify-center">
+                  <img src={vpnProviders[0].logoUrl} alt="NordVPN logo" className="w-full h-full object-contain p-1" />
                 </div>
                 <div>
                   <div className="flex items-center gap-3">

@@ -32,7 +32,7 @@ export default function FreeVpnUk() {
             <h2 className="text-xl font-bold text-slate-900" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Safe Free VPN Options</h2>
             {freeVpns.map((vpn) => (
               <div key={vpn.slug} className="bg-white rounded-xl border border-zinc-200 p-5 flex items-center gap-4 flex-wrap">
-                <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold shrink-0" style={{ backgroundColor: vpn.color, fontFamily: "'Space Grotesk', sans-serif" }}>{vpn.name.charAt(0)}</div>
+                <div className="w-16 h-10 rounded-lg overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center"><img src={vpn.logoUrl} alt={`${vpn.name} logo`} className="w-full h-full object-contain" loading="lazy" /></div>
                 <div className="flex-1">
                   <div className="font-bold text-slate-900 mb-1" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{vpn.name}</div>
                   <p className="text-sm text-slate-500">{vpn.tagline}</p>

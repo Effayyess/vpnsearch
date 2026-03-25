@@ -60,12 +60,14 @@ export default function VpnCard({ vpn, featured = false }: VpnCardProps) {
             </div>
           </div>
 
-          {/* VPN logo placeholder */}
-          <div
-            className="w-12 h-12 rounded-lg flex items-center justify-center text-white font-bold text-lg shrink-0 shadow-sm"
-            style={{ backgroundColor: vpn.color, fontFamily: "'Space Grotesk', sans-serif" }}
-          >
-            {vpn.name.charAt(0)}
+          {/* VPN logo */}
+          <div className="w-20 h-12 rounded-lg overflow-hidden shrink-0 shadow-sm border border-zinc-100 bg-white flex items-center justify-center">
+            <img
+              src={vpn.logoUrl}
+              alt={`${vpn.name} logo`}
+              className="w-full h-full object-contain"
+              loading="lazy"
+            />
           </div>
 
           {/* VPN info */}

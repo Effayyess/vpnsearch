@@ -50,7 +50,7 @@ export default function VpnComparison() {
                     <th className="text-left p-4 text-slate-500 font-medium w-40">Feature</th>
                     {vpns.map((vpn) => (
                       <th key={vpn.slug} className="p-4 text-center">
-                        <div className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm mx-auto mb-1" style={{ backgroundColor: vpn.color }}>{vpn.name.charAt(0)}</div>
+                        <div className="w-14 h-8 rounded-lg overflow-hidden mx-auto mb-1 border border-zinc-100 bg-white flex items-center justify-center"><img src={vpn.logoUrl} alt={`${vpn.name} logo`} className="w-full h-full object-contain" loading="lazy" /></div>
                         <div className="font-bold text-slate-900" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{vpn.name}</div>
                       </th>
                     ))}

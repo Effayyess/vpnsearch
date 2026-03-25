@@ -25,7 +25,7 @@ export default function VpnDeals() {
           <div className="space-y-4">
             {deals.map((vpn, i) => (
               <div key={vpn.slug} className={`bg-white rounded-xl border p-5 flex items-center gap-4 flex-wrap ${i === 0 ? "border-amber-300 ring-1 ring-amber-200" : "border-zinc-200"}`}>
-                <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold shrink-0" style={{ backgroundColor: vpn.color, fontFamily: "'Space Grotesk', sans-serif" }}>{vpn.name.charAt(0)}</div>
+                <div className="w-16 h-10 rounded-lg overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center"><img src={vpn.logoUrl} alt={`${vpn.name} logo`} className="w-full h-full object-contain" loading="lazy" /></div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap mb-1">
                     <span className="font-bold text-slate-900" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{vpn.name}</span>

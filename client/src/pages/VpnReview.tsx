@@ -92,11 +92,12 @@ export default function VpnReview() {
           </Link>
 
           <div className="flex items-start gap-5 flex-wrap">
-            <div
-              className="w-16 h-16 rounded-xl flex items-center justify-center text-white font-bold text-2xl shrink-0 shadow-lg"
-              style={{ backgroundColor: vpn.color, fontFamily: "'Space Grotesk', sans-serif" }}
-            >
-              {vpn.name.charAt(0)}
+            <div className="w-24 h-16 rounded-xl overflow-hidden shrink-0 shadow-lg border border-zinc-700 bg-zinc-900 flex items-center justify-center">
+              <img
+                src={vpn.logoUrl}
+                alt={`${vpn.name} logo`}
+                className="w-full h-full object-contain p-1"
+              />
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-3 flex-wrap mb-2">
@@ -482,11 +483,8 @@ export default function VpnReview() {
                       href={`/review/${other.slug}`}
                       className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-zinc-50 transition-colors group"
                     >
-                      <div
-                        className="w-7 h-7 rounded-md flex items-center justify-center text-white text-xs font-bold shrink-0"
-                        style={{ backgroundColor: other.color }}
-                      >
-                        {other.name.charAt(0)}
+                      <div className="w-12 h-7 rounded-md overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center">
+                        <img src={other.logoUrl} alt={`${other.name} logo`} className="w-full h-full object-contain" loading="lazy" />
                       </div>
                       <div className="flex-1">
                         <div className="text-sm font-medium text-slate-800 group-hover:text-amber-700 transition-colors">
