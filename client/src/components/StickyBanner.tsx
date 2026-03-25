@@ -47,8 +47,12 @@ export default function StickyBanner() {
         <div className="flex items-center justify-between gap-4 flex-wrap">
           {/* Left: VPN info */}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-indigo-600 rounded-md flex items-center justify-center text-white font-bold text-sm shrink-0" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-              N
+            <div className="w-10 h-10 bg-white rounded-md flex items-center justify-center shrink-0 overflow-hidden p-1">
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/nordvpn_22ff2754.png"
+                alt="NordVPN"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <div className="flex items-center gap-2">

@@ -10,8 +10,13 @@ import { vpnProviders, getVpnsByUseCase } from "@/lib/vpnData";
 import { blogPosts } from "@/lib/blogData";
 import VpnLogo from "@/components/VpnLogo";
 
-// Hero image from generation
-const HERO_IMAGE = "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1400&auto=format&fit=crop&q=80";
+// Hero background — London aerial with amber VPN shield (Option 4)
+// To switch: replace HERO_IMAGE with one of the alternatives below
+// Option 1 (amber network nodes): https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/hero-option-1-oANcz56w8TRau8cMjW2Zb7.webp
+// Option 2 (digital globe):       https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/hero-option-2-Utu2x4GkiL9X3LbNA3kx8p.webp
+// Option 3 (VPN tunnel rings):    https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/hero-option-3-7sG8Tp2dvWnetw6PELiuSh.webp
+// Option 4 (London + shield):     https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/hero-option-4-Un23zRVHGcX3Hems5LkmyL.webp
+const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/hero-option-4-Un23zRVHGcX3Hems5LkmyL.webp";
 
 export default function Home() {
   const topVpns = vpnProviders.slice(0, 5);
@@ -42,10 +47,11 @@ export default function Home() {
       <section className="relative overflow-hidden bg-zinc-950 min-h-[580px] flex items-center">
         {/* Background image with overlay */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: `url(${HERO_IMAGE})` }}
+          className="absolute inset-0 bg-cover bg-center opacity-60"
+          style={{ backgroundImage: `url(${HERO_IMAGE})`, backgroundPosition: "center 30%" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/95 to-zinc-950/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/85 to-zinc-950/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
 
         <div className="relative container py-20">
           <div className="max-w-2xl">
