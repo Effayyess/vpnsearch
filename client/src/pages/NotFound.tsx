@@ -1,49 +1,46 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, Home } from "lucide-react";
-import { useLocation } from "wouter";
+// VPN Vault UK — 404 Not Found
+import { Link } from "wouter";
+import { Shield, ChevronRight } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 export default function NotFound() {
-  const [, setLocation] = useLocation();
-
-  const handleGoHome = () => {
-    setLocation("/");
-  };
-
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
-      <Card className="w-full max-w-lg mx-4 shadow-lg border-0 bg-white/80 backdrop-blur-sm">
-        <CardContent className="pt-8 pb-8 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="relative">
-              <div className="absolute inset-0 bg-red-100 rounded-full animate-pulse" />
-              <AlertCircle className="relative h-16 w-16 text-red-500" />
-            </div>
+    <>
+      <SEOHead
+        title="Page Not Found — VPN Vault UK"
+        description="The page you're looking for doesn't exist. Head back to our VPN rankings."
+        canonical="/404"
+      />
+      <div className="min-h-[60vh] flex items-center justify-center bg-zinc-50">
+        <div className="text-center px-4">
+          <div className="w-16 h-16 bg-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+            <Shield className="w-8 h-8 text-slate-900" />
           </div>
-
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">404</h1>
-
-          <h2 className="text-xl font-semibold text-slate-700 mb-4">
-            Page Not Found
-          </h2>
-
-          <p className="text-slate-600 mb-8 leading-relaxed">
-            Sorry, the page you are looking for doesn't exist.
-            <br />
-            It may have been moved or deleted.
+          <div className="text-8xl font-bold text-zinc-200 mb-4" style={{ fontFamily: "'DM Mono', monospace" }}>404</div>
+          <h1 className="text-2xl font-bold text-slate-900 mb-3" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+            Page not found
+          </h1>
+          <p className="text-slate-500 mb-8 max-w-sm mx-auto leading-relaxed">
+            The page you're looking for doesn't exist. Head back to our rankings to find the best VPN for you.
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button
-              onClick={handleGoHome}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link
+              href="/best-vpns-uk"
+              className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold text-sm px-5 py-2.5 rounded-lg transition-colors"
+              style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
-              <Home className="w-4 h-4 mr-2" />
-              Go Home
-            </Button>
+              View VPN Rankings <ChevronRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 bg-white border border-zinc-200 hover:border-amber-300 text-slate-700 font-medium text-sm px-5 py-2.5 rounded-lg transition-colors"
+              style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+            >
+              Go to Homepage
+            </Link>
           </div>
-        </CardContent>
-      </Card>
-    </div>
+        </div>
+      </div>
+    </>
   );
 }
