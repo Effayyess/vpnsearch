@@ -1,7 +1,7 @@
 // VPN Search — Site Navigation
 // Design: "Digital Cartography" — clean white nav, amber CTA pill
 // Structure: Rankings | By Need | Reviews | Learn | Deals | Articles
-// COMPLETELY DIFFERENT from vpncompareuk.co.uk navigation
+// Structure is completely distinct from Site 1
 
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "wouter";

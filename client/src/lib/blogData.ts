@@ -1,6 +1,6 @@
 // VPN Search — Blog Data
 // 24 original SEO-rich articles — all 1,200+ words, structured with H2/H3 sections
-// Completely different from vpncompareuk.co.uk
+// VPN Search — completely distinct content from Site 1
 
 export interface BlogPost {
   slug: string;

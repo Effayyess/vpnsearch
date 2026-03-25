@@ -1,7 +1,7 @@
 // VPN Search — Homepage
 // Design: "Digital Cartography" — off-white, slate text, amber accent
 // Layout: Asymmetric hero, horizontal score cards, editorial sections
-// COMPLETELY DIFFERENT from vpncompareuk.co.uk
+// VPN Search — completely distinct from Site 1
 
 import { Link } from "wouter";
 import { ArrowRight, Shield, Zap, Eye, Star, CheckCircle, ExternalLink, ChevronRight, Clock } from "lucide-react";

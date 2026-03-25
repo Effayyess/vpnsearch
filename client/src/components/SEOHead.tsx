@@ -67,11 +67,11 @@ export default function SEOHead({
       description,
     };
 
-    let scriptEl = document.querySelector('script[data-vpnvault-jsonld]') as HTMLScriptElement;
+    let scriptEl = document.querySelector('script[data-vpnsearch-jsonld]') as HTMLScriptElement;
     if (!scriptEl) {
       scriptEl = document.createElement("script");
       scriptEl.type = "application/ld+json";
-      scriptEl.setAttribute("data-vpnvault-jsonld", "true");
+      scriptEl.setAttribute("data-vpnsearch-jsonld", "true");
       document.head.appendChild(scriptEl);
     }
     scriptEl.textContent = JSON.stringify(jsonLd || defaultJsonLd);
