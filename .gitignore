@@ -110,3 +110,13 @@ temp/
 
 # Manus version file (auto-generated, not part of source)
 client/public/__manus__/version.json
+
+# Build helper scripts (not part of the deployable site)
+inject_logos*.py
+replace_logos.py
+replace_with_vpnlogo.py
+update_logo_urls.py
+append_blogs.py
+write_pages.py
+competitor-research.md
+.manus-logs/
