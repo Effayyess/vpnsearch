@@ -181,7 +181,7 @@ export const vpnProviders: VpnProvider[] = [
     realWorldTest:
       "In 2024, NordVPN was ordered by a court to surrender user data as part of a criminal investigation. It was only able to provide payment-related data and confirmation that an email address was associated with an account — no browsing data, no connection logs, no IP addresses.",
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/nordvpn_b574654b.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/nordvpn_cd8305f0.png",
     affiliateUrl: "#",
   },
   {
@@ -282,7 +282,7 @@ export const vpnProviders: VpnProvider[] = [
     realWorldTest:
       "Turkish authorities seized an ExpressVPN server in 2017 as part of a high-profile murder investigation. They found no connection logs, no user data, and no identifying information — confirming the TrustedServer no-logs policy works in practice.",
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/expressvpn_ca26dee6.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/expressvpn_ea7f0c12.png",
     affiliateUrl: "#",
   },
   {
@@ -381,7 +381,7 @@ export const vpnProviders: VpnProvider[] = [
       "Surfshark is incorporated in the Netherlands, which is within the EU's data retention framework. However, its RAM-only server network and Deloitte-audited no-logs policy mean no user data is stored. The Netherlands jurisdiction is a minor concern compared to the strong technical privacy measures in place.",
     realWorldTest: null,
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/surfshark_948d09e0.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/surfshark_dabeeeb6.png",
     affiliateUrl: "#",
   },
   {
@@ -480,7 +480,7 @@ export const vpnProviders: VpnProvider[] = [
       "CyberGhost is incorporated in Romania, which is outside the EU's mandatory data retention framework. Romania has strong privacy protections and has resisted EU pressure to implement data retention laws.",
     realWorldTest: null,
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/cyberghost_003f7713.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/cyberghost_2ce9d311.png",
     affiliateUrl: "#",
   },
   {
@@ -580,7 +580,7 @@ export const vpnProviders: VpnProvider[] = [
     realWorldTest:
       "Swiss authorities have attempted to obtain Proton user data on multiple occasions. In each case, Proton was only able to provide the account creation date — no IP addresses, no browsing data, no connection logs.",
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/protonvpn_21d30722.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/protonvpn_d650a911.png",
     affiliateUrl: "#",
   },
   {
@@ -679,7 +679,7 @@ export const vpnProviders: VpnProvider[] = [
     realWorldTest:
       "In 2016, IPVanish provided user connection logs to the FBI under a Homeland Security subpoena, contradicting its then-stated no-logs policy. The company has since changed ownership and had its no-logs policy audited by Leviathan Security.",
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/ipvanish_c6d76a1f.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/ipvanish_0871f05b.png",
     affiliateUrl: "#",
   },
   {
@@ -779,7 +779,7 @@ export const vpnProviders: VpnProvider[] = [
     realWorldTest:
       "PIA's no-logs policy has been proven in two separate US federal court cases. In both instances, the FBI subpoenaed PIA for user data and received nothing useful — confirming that no identifying information is stored.",
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/pia_069a5a24.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/pia_a7d9c823.png",
     affiliateUrl: "#",
   },
   {
@@ -880,7 +880,7 @@ export const vpnProviders: VpnProvider[] = [
     realWorldTest:
       "In April 2023, Swedish police raided Mullvad's offices and attempted to seize servers. Mullvad confirmed that no data was taken because no data exists — the raid confirmed the no-logs policy in practice.",
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/mullvad_fcd149ca.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/mullvad_4652ef5e.png",
     affiliateUrl: "#",
   },
   {
@@ -978,7 +978,7 @@ export const vpnProviders: VpnProvider[] = [
       "Windscribe is based in Canada, a Five Eyes member. However, its no-logs policy has been audited by Cure53, and it does not require an email address to create a free account.",
     realWorldTest: null,
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/windscribe_711d398e.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/windscribe_f1da0f81.png",
     affiliateUrl: "#",
   },
   {
@@ -1075,7 +1075,7 @@ export const vpnProviders: VpnProvider[] = [
       "Hide.me is incorporated in Malaysia, which is not a member of any international surveillance alliance and has no mandatory data retention laws for VPN providers.",
     realWorldTest: null,
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/hidemyass_25fe36b2.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/hidemevpn_6db1ab22.png",
     affiliateUrl: "#",
   },
   {
@@ -1172,7 +1172,7 @@ export const vpnProviders: VpnProvider[] = [
       "PrivateVPN is based in Sweden, a 14 Eyes member. No independent audit of its no-logs policy has been conducted, which is a notable gap compared to top-ranked VPNs.",
     realWorldTest: null,
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/purevpn_b3974698.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/strongvpn_8b49cbb2.png",
     affiliateUrl: "#",
   },
   {
@@ -1269,7 +1269,7 @@ export const vpnProviders: VpnProvider[] = [
       "TunnelBear is based in Canada, a Five Eyes member, and is owned by McAfee. Its annual Cure53 security audits are the most frequent of any VPN in our rankings.",
     realWorldTest: null,
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/tunnelbear_95871405.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/tunnelbear_d7010a8b.png",
     affiliateUrl: "#",
   },
   {
@@ -1365,7 +1365,7 @@ export const vpnProviders: VpnProvider[] = [
       "Hotspot Shield collects extensive user data including browsing activity, which it uses for advertising purposes. This is disclosed in its privacy policy. It is not suitable for users who require genuine privacy protection.",
     realWorldTest: null,
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/hotspot-shield_67f7d33d.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/hotspotshield_998c2be3.png",
     affiliateUrl: "#",
   },
   {
@@ -1462,7 +1462,7 @@ export const vpnProviders: VpnProvider[] = [
       "Norton Secure VPN logs browsing data and connection timestamps. This is disclosed in its privacy policy. It is not suitable for users who require genuine privacy protection.",
     realWorldTest: null,
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/atlas-vpn_0af419b1.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/atlasvpn_2722ae44.png",
     affiliateUrl: "#",
   },
   {
@@ -1558,7 +1558,7 @@ export const vpnProviders: VpnProvider[] = [
       "Avast SecureLine logs browsing data and shares it with Avast. In 2020, Avast's subsidiary Jumpshot was found to be selling detailed user browsing data to third parties. The subsidiary was shut down following the scandal, but the reputational damage remains.",
     realWorldTest: null,
 
-    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/avast-secureline_a90c358b.svg",
+    logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663462511898/883qKzoc5iMmoQQShbBxNr/vyprvpn_eda6dd51.png",
     affiliateUrl: "#",
   },
 ];

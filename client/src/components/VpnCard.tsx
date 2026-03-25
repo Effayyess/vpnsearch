@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { ChevronDown, ChevronUp, Check, X, ExternalLink, Zap, Lock, Tv, DollarSign } from "lucide-react";
 import type { VpnProvider } from "@/lib/vpnData";
+import VpnLogo from "@/components/VpnLogo";
 
 interface VpnCardProps {
   vpn: VpnProvider;
@@ -62,12 +63,7 @@ export default function VpnCard({ vpn, featured = false }: VpnCardProps) {
 
           {/* VPN logo */}
           <div className="w-20 h-12 rounded-lg overflow-hidden shrink-0 shadow-sm border border-zinc-100 bg-white flex items-center justify-center">
-            <img
-              src={vpn.logoUrl}
-              alt={`${vpn.name} logo`}
-              className="w-full h-full object-contain"
-              loading="lazy"
-            />
+            <VpnLogo slug={vpn.slug} name={vpn.name} className="w-full h-full" />
           </div>
 
           {/* VPN info */}

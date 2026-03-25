@@ -5,6 +5,7 @@ import { useParams, Link } from "wouter";
 import { Check, X, ExternalLink, ChevronLeft, Shield, Zap, Tv, Lock, Star, AlertTriangle } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { getVpnBySlug, vpnProviders } from "@/lib/vpnData";
+import VpnLogo from "@/components/VpnLogo";
 
 function ScoreGauge({ score, label }: { score: number; label: string }) {
   const pct = (score / 10) * 100;
@@ -484,7 +485,7 @@ export default function VpnReview() {
                       className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-zinc-50 transition-colors group"
                     >
                       <div className="w-12 h-7 rounded-md overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center">
-                        <img src={other.logoUrl} alt={`${other.name} logo`} className="w-full h-full object-contain" loading="lazy" />
+                        <VpnLogo slug={other.slug} name={other.name} className="w-full h-full" />
                       </div>
                       <div className="flex-1">
                         <div className="text-sm font-medium text-slate-800 group-hover:text-amber-700 transition-colors">

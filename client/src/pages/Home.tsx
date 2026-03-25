@@ -8,6 +8,7 @@ import { ArrowRight, Shield, Zap, Eye, Star, CheckCircle, ExternalLink, ChevronR
 import SEOHead from "@/components/SEOHead";
 import { vpnProviders, getVpnsByUseCase } from "@/lib/vpnData";
 import { blogPosts } from "@/lib/blogData";
+import VpnLogo from "@/components/VpnLogo";
 
 // Hero image from generation
 const HERO_IMAGE = "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1400&auto=format&fit=crop&q=80";
@@ -136,7 +137,7 @@ export default function Home() {
 
                 {/* Logo */}
                 <div className="w-16 h-10 rounded-lg overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center">
-                  <img src={vpn.logoUrl} alt={`${vpn.name} logo`} className="w-full h-full object-contain" loading="lazy" />
+                  <VpnLogo slug={vpn.slug} name={vpn.name} className="w-full h-full" />
                 </div>
 
                 {/* Info */}
@@ -238,7 +239,7 @@ export default function Home() {
                       {i + 1}
                     </span>
                     <div className="w-12 h-7 rounded-md overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center">
-                      <img src={vpn.logoUrl} alt={vpn.name} className="w-full h-full object-contain" loading="lazy" />
+                      <VpnLogo slug={vpn.slug} name={vpn.name} className="w-full h-full" />
                     </div>
                     <div className="flex-1">
                       <span className="text-sm font-semibold text-slate-800">{vpn.name}</span>
@@ -275,7 +276,7 @@ export default function Home() {
                       {i + 1}
                     </span>
                     <div className="w-12 h-7 rounded-md overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center">
-                      <img src={vpn.logoUrl} alt={vpn.name} className="w-full h-full object-contain" loading="lazy" />
+                      <VpnLogo slug={vpn.slug} name={vpn.name} className="w-full h-full" />
                     </div>
                     <div className="flex-1">
                       <span className="text-sm font-semibold text-slate-800">{vpn.name}</span>
@@ -403,7 +404,7 @@ export default function Home() {
             <div className="lg:col-span-2 bg-slate-800/50 border border-slate-700 rounded-xl p-6">
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-20 h-12 rounded-xl overflow-hidden border border-slate-600 bg-slate-900 flex items-center justify-center">
-                  <img src={vpnProviders[0].logoUrl} alt="NordVPN logo" className="w-full h-full object-contain p-1" />
+                  <VpnLogo slug={vpnProviders[0].slug} name={vpnProviders[0].name} className="w-full h-full" />
                 </div>
                 <div>
                   <div className="flex items-center gap-3">

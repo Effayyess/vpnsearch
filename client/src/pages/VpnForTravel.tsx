@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Globe, ExternalLink, ChevronRight } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { vpnProviders } from "@/lib/vpnData";
+import VpnLogo from "@/components/VpnLogo";
 
 export default function VpnForTravel() {
   const travelVpns = vpnProviders.slice(0, 5);
@@ -42,7 +43,7 @@ export default function VpnForTravel() {
                     <div key={vpn.slug} className={`bg-white rounded-xl border p-5 ${i === 0 ? "border-amber-300 ring-1 ring-amber-200" : "border-zinc-200"}`}>
                       <div className="flex items-center gap-4 flex-wrap">
                         <div className="text-2xl font-bold text-zinc-200 w-8 shrink-0" style={{ fontFamily: "'DM Mono', monospace" }}>{String(i + 1).padStart(2, "0")}</div>
-                        <div className="w-16 h-10 rounded-lg overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center"><img src={vpn.logoUrl} alt={`${vpn.name} logo`} className="w-full h-full object-contain" loading="lazy" /></div>
+                        <div className="w-16 h-10 rounded-lg overflow-hidden shrink-0 border border-zinc-100 bg-white flex items-center justify-center"><VpnLogo slug={vpn.slug} name={vpn.name} className="w-full h-full" /></div>
                         <div className="flex-1 min-w-0">
                           <div className="font-bold text-slate-900 mb-0.5" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{vpn.name}</div>
                           <div className="text-sm text-slate-500">{vpn.countries} countries · {vpn.monthlyPrice}/mo · {vpn.moneyBack} guarantee</div>
